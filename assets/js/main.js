@@ -81,6 +81,7 @@ $('.popup-modal .close-modal').click(function(e) {
 $('.show-more-project').click(function(){
     $('.section-portfolio .project-item.d-none').removeClass('d-none');
     $(this).hide();
+    AOS.init();
 });
 
 /*--------------- Feedback Slider ---------------*/ 
@@ -88,7 +89,7 @@ var swiper = new Swiper(".feedback-slider", {
     spaceBetween: 20,
     loop:true,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
       disableOnInteraction: false, 
     },
     pagination: {

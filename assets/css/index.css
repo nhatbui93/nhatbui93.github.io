@@ -640,8 +640,9 @@ section.section-portfolio p.desc {
     transition: opacity 1s, top 3s ease-in-out;
 }
 .section-portfolio .project-list .project-item a .title-project {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 15px 0;
+    padding: 0 5px;
 }
 .section-portfolio .project-list .project-item a:hover .image-box img {
     transform: translateY(-100%);
@@ -662,6 +663,25 @@ section.section-portfolio p.desc {
 .section-portfolio .show-more-project a:hover:before {
     content: "";
     background: #870000;
+}
+
+@media (max-width: 767px) {
+    .section-portfolio .project-list > .row {
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+    .section-portfolio .project-list > .row .project-item {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .section-portfolio .project-list > .row .project-item .title-project {
+        font-size: 0.9rem;
+        margin: 5px 0;
+        min-height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
 }
 
 /*==== SECTION FEEDBACK ====*/
