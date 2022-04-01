@@ -19,6 +19,7 @@
     <link rel="preload" as="style" type="text/css" href="./assets/css/bootstrap.min.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" type="text/css" href="./assets/css/swiper.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" type="text/css" href="./assets/css/aos.css" onload="this.rel='stylesheet'" />
+    <link rel="preload" as="style" type="text/css" href="./assets/css/odometer-theme-minimal.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" type="text/css" href="./assets/css/main.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as='style' type="text/css" href="./assets/css/index.css" onload="this.rel='stylesheet'">
     <style>
@@ -32,14 +33,19 @@
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/swiper.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/aos.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/odometer-theme-minimal.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/index.css" rel="stylesheet" type="text/css" />
     <link rel="preload" as="script" href="./assets/js/jquery-3.3.1.slim.min.js" />
+    <link rel="preload" as="script" href="./assets/js/jquery.appear.js" />
     <link rel="preload" as="script" href="./assets/js/swiper.js" />
     <link rel="preload" as="script" href="./assets/js/aos.js" />
+    <link rel="preload" as="script" href="./assets/js/odometer.js" />
     <script src="./assets/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+    <script src="./assets/js/jquery.appear.js" type="text/javascript"></script>
     <script src="./assets/js/swiper.js" type="text/javascript"></script>
     <script src="./assets/js/aos.js" type="text/javascript"></script>
+    <script src="./assets/js/odometer.js" type="text/javascript"></script>
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -247,6 +253,32 @@
                                 <a href="https://www.dropbox.com/home" class="btn btn-primary mb-0" target="_blank"><span><i class="fas fa-download"></i> Download CV</span></a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-counter" id="counter" >
+                <div class="container">
+                    <div class="row counter-area">
+                            <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="0">
+                                <i class="fas fa-briefcase d-block mb-2"></i>
+                                <span class="odometer" data-count="3.5">00</span>
+                                <h4>Years of experience</h4>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="50">
+                                <i class="fas fa-code d-block mb-2"></i>
+                                <span class="odometer" data-count="1550">00</span>
+                                <h4>Websites deployed</h4>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="100">
+                                <i class="fas fa-handshake d-block mb-2"></i>
+                                <span class="odometer" data-count="1442">00</span>
+                                <h4>Happy clients</h4>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="150">
+                                <i class="fas fa-award d-block mb-2"></i>
+                                <span class="odometer" data-count="10">00</span>
+                                <h4>Awards achieved</h4>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -818,6 +850,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="back-to-top" title="Back to top">
+                <img src="/assets/icon/up-arrow.svg" alt="Back to top" width="20" height="20">
             </div>
         </footer>
         <!--Poup modal-->

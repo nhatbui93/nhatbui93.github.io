@@ -1,3 +1,8 @@
+
+$(document).ready(function ($) {
+	"use strict";
+	awe_backtotop();
+});
 /* ==== AOS Animation ==== */
   AOS.init();
 /* ==== Load plugin when scroll page ==== */
@@ -111,3 +116,36 @@ var swiper = new Swiper(".feedback-slider", {
     },
 
 }); 
+$(document).ready(function ($) {
+    $(".odometer").appear(function () {
+        var odometerItem = $(".odometer");
+        odometerItem.each(function () {
+            var count = $(this).attr("data-count");
+            $(this).html(count);
+        })
+    });
+});
+/*--------------- Back to top button ---------------*/ 
+function awe_backtotop() { 
+	if ($('.back-to-top').length) {
+		var scrollTrigger = 100,
+			backToTop = function () {
+				var scrollTop = $(window).scrollTop();
+				if (scrollTop > scrollTrigger) {
+					$('.back-to-top').addClass('show');
+				} else {
+					$('.back-to-top').removeClass('show');
+				}
+			};
+		backToTop();
+		$(window).on('scroll', function () {
+			backToTop();
+		});
+		$('.back-to-top').on('click', function (e) {
+			e.preventDefault();
+			$('html,body').animate({
+				scrollTop: 0
+			}, 700);
+		});
+	}
+} window.awe_backtotop=awe_backtotop;

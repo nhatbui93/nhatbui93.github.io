@@ -486,3 +486,44 @@ footer.footer .copyright {
 footer.footer .copyright b {
     color: var(--hover);
 }
+footer.footer .back-to-top {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    top: auto !important;
+    height: 30px;
+    width: 30px;
+    background-color: var(--mainColor);
+    line-height: 30px;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: all 0.3s ease-out 0s;
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+    display: flex !important;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox; 
+    display: -webkit-flex !important;
+    justify-content: center;
+    align-content: center;
+}
+footer.footer .back-to-top img {
+    width: 20px;
+    height: auto;
+}
+footer.footer .back-to-top:hover{
+    background-color: var(--hover);
+}
+footer.footer .back-to-top.show {
+    position: fixed;
+    z-index: 999;
+    transition: all 0.3s ease-out 0s;
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}

@@ -439,8 +439,24 @@ section.section h2.section-title span:before {
         margin-top: 20px;
     }
 }
-
-
+.block-counter {
+    margin-top: 50px;
+}
+.block-counter .counter-area .count-item{
+    margin: 10px 0;
+}
+.block-counter .counter-area .count-item i {
+    font-size: 2.5rem;
+    color: #f79f1f;
+}
+.block-counter .counter-area .count-item span {
+    font-size: 3rem;
+    color: var(--mainColor);
+    font-weight: 700;
+}
+.block-counter .counter-area .count-item h4 {
+    font-size: 1.2rem;
+}
 /*==== SECTION EXPERIENCE ====*/
 
 .section-experience .experience-list .experience-item {
@@ -693,9 +709,11 @@ section.section-feedback p.desc {
 }
 section.section-feedback .swiper-container {
     padding-bottom: 40px;
+    margin-left: -1px;
 }
 section.section-feedback .slider-wrapper {
     display: flex;
+    padding-left: -1px;
 }
 section.section-feedback .feedback-slider .testi-item {
     text-align: center;
@@ -707,6 +725,11 @@ section.section-feedback .feedback-slider .testi-item {
     height: auto;
     position: relative;
     transition-property: transform;
+    cursor: -webkit-grab; 
+    cursor: grab;
+}
+section.section-feedback .feedback-slider .testi-item:hover {
+    border: 1px solid var(--mainColor);
 }
 section.section-feedback .feedback-slider .testi-item img {
     height: 80px;
@@ -740,7 +763,7 @@ section.section-feedback .feedback-slider .testi-item p:before{
     left: 10px;
     width: 25px;
     height: 25px;
-    background-image: url('/introduce_yourself/assets/icon/nhay-don.svg');
+    background-image: url('/assets/icon/nhay-don.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
