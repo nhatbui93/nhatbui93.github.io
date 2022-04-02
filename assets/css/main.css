@@ -306,7 +306,6 @@ header.header.sticky {
 .google-trans ul li {
     display: inline-block;
     margin-left: 3px;
-    border: 0px !important;
 }
 
 .google-trans li a {
@@ -314,6 +313,7 @@ header.header.sticky {
     line-height: 34px;
     position: relative;
     bottom: 1px;
+    border: 0px !important;
 }
 
 .google-trans li a:hover {
