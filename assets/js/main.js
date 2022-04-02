@@ -75,6 +75,7 @@ $('.experience-item .see-detail').click(function(e) {
     $('.popup-modal .modal-body').html(content);
     $('.block-overlay').addClass('open');
     $('.popup-modal').show();
+    awe_lazyloadImage();
 });
 
 $('.popup-modal .close-modal').click(function(e) {
@@ -94,7 +95,7 @@ var swiper = new Swiper(".feedback-slider", {
     spaceBetween: 20,
     loop:true,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false, 
     },
     pagination: {
@@ -116,6 +117,7 @@ var swiper = new Swiper(".feedback-slider", {
     },
 
 }); 
+/*--------------- Odometer Counter ---------------*/ 
 $(document).ready(function ($) {
     $(".odometer").appear(function () {
         var odometerItem = $(".odometer");
