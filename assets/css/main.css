@@ -306,6 +306,7 @@ header.header.sticky {
 .google-trans ul li {
     display: inline-block;
     margin-left: 3px;
+    border: 0px !important;
 }
 
 .google-trans li a {
