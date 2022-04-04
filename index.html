@@ -284,12 +284,12 @@
                             <h4>Years of experience</h4>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="50">
-                            <i class="fas fa-code d-block mb-2"></i>
+                            <i class="fas fa-globe d-block mb-2"></i>
                             <span class="odometer" data-count="1550">00</span>
                             <h4>Websites deployed</h4>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="100">
-                            <i class="fas fa-handshake d-block mb-2"></i>
+                            <i class="fas fa-thumbs-up d-block mb-2"></i>
                             <span class="odometer" data-count="1042">00</span>
                             <h4>Happy clients</h4>
                         </div>
@@ -456,7 +456,7 @@
                     <div class="col-12 col-md-12 col-lg-6 col-item" data-aos="fade-right">
                         <div class="skills-block">
                             <h3 class="title-skills">
-                                <i class="fas fa-code"></i> Skills
+                                <i class="fas fa-laptop-code"></i> Skills
                             </h3>
                             <div class="skill-content">
                                 <ul>
@@ -477,7 +477,7 @@
                             </h3>
                             <div class="skill-content">
                                 <ul>
-                                    <li><i class="fas fa-check-circle"></i> Have good communication/customer communication skills.</li>
+                                    <li><i class="fas fa-check-circle"></i> Have good customer communication skills.</li>
                                     <li><i class="fas fa-check-circle"></i> Able to work independently or in groups.</li>
                                     <li><i class="fas fa-check-circle"></i> Enthusiastic, patient, highly responsible and always working with a serious attitude.</li>
                                     <li><i class="fas fa-check-circle"></i> Able to work under high pressure.</li>
@@ -817,7 +817,7 @@
                                 </div>
                                 <div class="col-12 col-lg-6 col-right" data-aos="fade-left">
                                     <div class="contact-form">
-                                        <h3>Or send messenger</h3>
+                                        <h3>Send messenger</h3>
                                         <p>Please enter required fields (*)</p>
                                         <form id="form-messenger" target="_self" onsubmit="" action="javascript: postToGoogle()">
                                             <input type="text" value="" placeholder="Fullname (*)" name="fullName" id="contactFormName" required>
@@ -853,6 +853,7 @@
                                                     0: function() {
                                                         setTimeout(function() {
                                                             $('#sc_form').show().removeClass('alert-info').addClass('alert-success').text('Your information has been sent successfully.');
+                                                            $('#form-messenger input, #form-messenger textarea').val('');
                                                             setTimeout(function() {
                                                                 $('#sc_form').hide();
                                                             }, 3000)
@@ -861,6 +862,7 @@
                                                     200: function() {
                                                         setTimeout(function() {
                                                             $('#sc_form').show().removeClass('alert-info').addClass('alert-success').text('Your information has been sent successfully.');
+                                                            $('#form-messenger input, #form-messenger textarea').val('');
                                                             setTimeout(function() {
                                                                 $('#sc_form').hide();
                                                             }, 3000)
